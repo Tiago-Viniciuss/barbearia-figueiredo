@@ -151,3 +151,21 @@ body {
 #footer address {
     font-size: 0.8em;
 }
+
+/*
+    Gallery
+*/
+
+#backgroundPictureGallery {
+    height: 550px;
+    background-image: url(../imagens/carousel4.jpg);
+}
+
+/*
+    Crew
+*/
+
+#backgroundPictureCrew {
+    height: 550px;
+    background-image: url(../imagens/carousel1.jpg); 
+}
