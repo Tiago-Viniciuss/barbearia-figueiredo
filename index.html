@@ -23,7 +23,7 @@
 </head>
 <body>
     <header id="header" class="bg-dark container-fluid">
-        <h1 class="bg-dark text-white"><a href="#">Barbearia Figueiredo's</a></h1>
+        <a href="#"><img class="d-block mx-auto mt-1" src="imagens/logo.png" alt=""></a>
         <button id="menuButton" class="material-symbols-outlined bg-transparent text-white border-0" onclick="openMenu()">menu</button>  
         <menu id="menuNav" class="bg-dark">
         <a href="#">Home</a>
@@ -38,7 +38,7 @@
     <main id="main" class=" p-2">
         <article>
             <h2 class="text-center p-3">
-                B a r b e r s h o p
+                Barbearia Figueiredo's
             </h2>
                 <p class="p-3">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laudantium, eligendi magnam vel, quae fugit voluptate quo, exercitationem placeat harum ea facilis. Ipsa sapiente, saepe dolorem quis recusandae sed facilis?
@@ -58,14 +58,16 @@
                 </p>
         </article>
     </main>
-    <div id="gallery">
+    <div id="carousel1">
         <img src="imagens/carousel1.jpg" data-anime="left" class="img-thumbnail" alt="">
         <img src="imagens/carousel2.jpg" data-anime="right" class="img-thumbnail" alt="">
         <img src="imagens/carousel3.jpg" data-anime="right" class="img-thumbnail" alt="">
-        <img src="imagens/carousel4.jpg" data-anime="left" class="img-thumbnail" alt="">
-        <img src="imagens/carousel5.jpg" data-anime="right" class="img-thumbnail" alt="">
-        <img src="imagens/carousel6.jpg" data-anime="left" class="img-thumbnail" alt="">
     </div>
+     <div id="carousel2">
+            <img src="imagens/carousel4.jpg" data-anime="left" class="img-thumbnail" alt="">
+            <img src="imagens/carousel5.jpg" data-anime="right" class="img-thumbnail" alt="">
+            <img src="imagens/carousel6.jpg" data-anime="left" class="img-thumbnail" alt="">
+        </div>
     <footer id="footer" class="bg-dark container-fluid mt-5">
         <a href="https://www.google.com/maps/place/Barbearia+Figueiredo's/@38.8099731,-9.286861,11z/data=!4m10!1m2!2m1!1sfigueiredos+barbershop!3m6!1s0xd19332958d79eb1:0x662d22231528aaef!8m2!3d38.7186739!4d-9.1302447!15sChZmaWd1ZWlyZWRvcyBiYXJiZXJzaG9wkgELYmFyYmVyX3Nob3DgAQA!16s%2Fg%2F11h13zn86b" target="_blank" class="text-decoration-none text-white">
             <div id="location" class="m-3 text-white">
@@ -88,6 +90,8 @@
         <p>Barbearia Figueiredo's, 2023 <sup>®</sup></p>
         <address class="text-white">Developed by <a href="https://tiago-viniciuss.github.io/portfolio/" target="_blank" class="text-white">Tiago Vinícius</a></address>
     </footer> 
+
+    <button id="backTop" class="material-symbols-outlined" onscroll="showButton()"><a href="#backgroundPicture">keyboard_double_arrow_up</a></button>
     
     <script src="javascript/script.js"></script>
 </body>

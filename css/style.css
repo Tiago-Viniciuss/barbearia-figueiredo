@@ -8,19 +8,16 @@ body {
 }
 
 #header {
-    height: 55px;
+    height: 60px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.477);
     position: fixed;
     top: 0;
     z-index: 99;
 }
 
-#header h1 {
-    margin: auto;
-    margin-top: 5px;
-    padding: 5px;
-    font-size: 1.5em;
-    text-align: center;
+#header img {
+    width: 70px;
+    height: 50px;
 }
 
 #header a {
@@ -114,7 +111,7 @@ body {
     background-image: url(../imagens/background2.jpg);
 }
 
-#gallery {
+#carousel1 {
     margin-top: 10px;
     height: 300px;
     display: flex;
@@ -122,11 +119,26 @@ body {
     scroll-behavior: smooth;
 }
 
-#gallery img {
+#carousel1 img {
     margin-right: 15px;
     height: 280px;
     width: 280px;
 }
+
+#carousel2 {
+    margin-top: 10px;
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+#carousel2 img {
+    margin-right: 15px;
+    height: 280px;
+    width: 280px;
+}
+
 
 #footer {
     width: 100%;
@@ -150,6 +162,23 @@ body {
 
 #footer address {
     font-size: 0.8em;
+}
+
+#backTop {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+    font-weight: bold;
+    display: none;
+    transition: 1s;
+}
+
+#backTop a {
+    color: black;
+    text-shadow: 0px 0px 1px white;
 }
 
 /*

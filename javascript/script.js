@@ -30,13 +30,17 @@ const animationClass = 'animate';
 
 function animeScroll() {
 
+let button = document.getElementById('backTop')
 const windowTop = window.pageYOffset + ((window.innerHeight * 3)/4)
 target.forEach(function(element){
 if ((windowTop) > element.offsetTop) {
     element.classList.add(animationClass);
+    button.style.display = 'block'
 } else {
     element.classList.remove(animationClass);
 }
+
+
 
 })
 
