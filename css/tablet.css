@@ -4,23 +4,20 @@
 body {
     margin: 0px;
     margin-top: 10px;
-    background-color: #E8E5DE;
+    background-color: #ffffff;
 }
 
 #header {
-    height: 55px;
+    height: 60px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.477);
     position: fixed;
     top: 0;
     z-index: 99;
 }
 
-#header h1 {
-    margin: auto;
-    margin-top: 5px;
-    padding: 5px;
-    font-size: 1.5em;
-    text-align: center;
+#header img {
+    width: 70px;
+    height: 50px;
 }
 
 #header a {
@@ -76,9 +73,7 @@ body {
 
 #backgroundPicture {
     height: 550px;
-    background-image: url(../imagens/background1.jpg);
-   
-   
+    background-image: url(../imagens/background1.jpg); 
 }
 
 
@@ -100,7 +95,8 @@ body {
    transform: translate3d(0px, 0px, 0px);
 }
 
-#main p {
+
+p {
     width: 300px;
     margin: auto;
     text-align: justify;
@@ -108,13 +104,14 @@ body {
 
 #background2 {
     margin: 15px;
-    width: 320px;
-    height: 200px;
+    width: 100%;
+    height: 300px;
     margin: auto;
     background-image: url(../imagens/background2.jpg);
+    border-radius: none;
 }
 
-#gallery {
+#carousel1 {
     margin-top: 10px;
     height: 300px;
     display: flex;
@@ -122,10 +119,37 @@ body {
     scroll-behavior: smooth;
 }
 
-#gallery img {
+#carousel1 img {
     margin-right: 15px;
     height: 280px;
     width: 280px;
+}
+
+#carousel2 {
+    margin-top: 10px;
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+#carousel2 img {
+    margin-right: 15px;
+    height: 280px;
+    width: 280px;
+}
+
+#review {
+    background-color: #333741;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#review:hover {
+    background-color: #4c4f56;
 }
 
 #footer {
@@ -150,4 +174,39 @@ body {
 
 #footer address {
     font-size: 0.8em;
+}
+
+#backTop {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+    font-weight: bold;
+    display: none;
+    transition: 1s;
+}
+
+#backTop a {
+    color: black;
+    text-shadow: 0px 0px 1px white;
+}
+
+/*
+    Gallery
+*/
+
+#backgroundPictureGallery {
+    height: 550px;
+    background-image: url(../imagens/carousel4.jpg);
+}
+
+/*
+    Crew
+*/
+
+#backgroundPictureCrew {
+    height: 550px;
+    background-image: url(../imagens/carousel1.jpg); 
 }
