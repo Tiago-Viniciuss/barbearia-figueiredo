@@ -95,11 +95,8 @@ body {
    transform: translate3d(0px, 0px, 0px);
 }
 
-#main h2 {
-    
-}
 
-#main p {
+p {
     width: 300px;
     margin: auto;
     text-align: justify;
@@ -142,6 +139,18 @@ body {
     width: 280px;
 }
 
+#review {
+    background-color: #333741;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#review:hover {
+    background-color: #4c4f56;
+}
 
 #footer {
     width: 100%;
