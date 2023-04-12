@@ -73,7 +73,7 @@ body {
 
 #backgroundPicture {
     height: 550px;
-    background-image: url(../imagens/background1.jpg); 
+    background-image: url(../imagens/background1.jpeg); 
 }
 
 
@@ -199,8 +199,69 @@ p {
 
 #backgroundPictureGallery {
     height: 550px;
-    background-image: url(../imagens/carousel4.jpg);
+    background-image: url(../imagens/backgroundgallery.jpeg);
 }
+
+#mainGallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.border {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.imgGallery {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    transition: 1s;
+}
+
+.imgGallery:hover {
+    transform: scale(1.1);
+}
+
+#haircut1 {
+    background-image: url(../imagens/haircut1.jpg);
+}
+
+#haircut2 {
+    background-image: url(../imagens/haircut2.jpg);
+}
+
+#haircut3 {
+    background-image: url(../imagens/haircut3.jpg);
+}
+
+#beard1 {
+    background-image: url(../imagens/beard1.jpg);
+}
+
+#beard2 {
+    background-image: url(../imagens/beard2.jpg);
+}
+
+#beard3 {
+    background-image: url(../imagens/beard3.jpg);
+}
+
+#beard4 {
+    background-image: url(../imagens/beard4.jpg);
+}
+
+#beard5 {
+    background-image: url(../imagens/beard5.jpg);
+}
+
+
 
 /*
     Crew
