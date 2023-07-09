@@ -1,9 +1,12 @@
 function openMenu() {
     let menu = document.getElementById('menuNav')
+    let menuComp = document.getElementById('menuComplement')
     let button = document.getElementById('menuButton')
     let header = document.getElementById('header')
 
     menu.classList.toggle('active')
+
+    menuComp.classList.toggle('active')
     
     if (menu.className == 'bg-dark active') {
         button.innerHTML = 'close'
@@ -12,13 +15,17 @@ function openMenu() {
         button.innerHTML = 'menu'
         header.style.boxShadow = '0px 5px 5px rgba(0, 0, 0, 0.477)'
     }
+
+
 }
 
 function seekLink() {
     let menu = document.getElementById('menuNav')
+    let menuComp = document.getElementById('menuComplement')
     let button = document.getElementById('menuButton')
 
     menu.className = 'bg-dark'
+    menuComp.className = 'bg-dark'
     button.innerHTML = 'menu'
 }
 
