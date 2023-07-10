@@ -52,7 +52,27 @@ body {
 
 #menuNav.active {
     padding-top: 100px;
-    height: 100vh;
+    height: 60vh;
+    visibility: visible;
+}
+
+#menuComplement {
+    width: 99vw;
+    height: 0vh;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+
+    visibility: hidden;
+    transition: .8s;
+    overflow-y: hidden;
+    z-index: 89;
+}
+
+#menuComplement.active {
+    height: 40vh;
     visibility: visible;
 }
 
@@ -60,9 +80,10 @@ body {
     margin-bottom: 30px;
     text-decoration: none;
     color: white;
-    font-size: 1.3em;
+    font-size: 0.9em;
     font-weight: bold;
 }
+
 
 .backgroundImages {
     background-size: cover;
@@ -73,9 +94,22 @@ body {
 
 #backgroundPicture {
     height: 550px;
-    background-image: url(../imagens/background1.jpg); 
+    background-image: url(../imagens/background1.png);
+    background-position: center;
 }
 
+#makeAppointment {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+#makeAppointment a {
+    text-decoration: none;
+    color: white;
+}
 
 [data-anime] {
     opacity: 0;
@@ -97,17 +131,29 @@ body {
 
 
 p {
-    width: 300px;
+    width: 480px;
     margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
     text-align: justify;
 }
 
+
 #background2 {
     margin: 15px;
-    width: 100%;
+    width: 70%;
     height: 300px;
     margin: auto;
-    background-image: url(../imagens/background2.jpg);
+    background-image: url(../imagens/background2.png);
+    border-radius: none;
+}
+
+#background3 {
+    margin: 15px;
+    width: 70%;
+    height: 300px;
+    margin: auto;
+    background-image: url(../imagens/background3.jpg);
     border-radius: none;
 }
 
@@ -139,11 +185,44 @@ p {
     width: 280px;
 }
 
+#reviewsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.reviews {
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#review1 {
+    width: 250px;
+    height: 90px;
+    background-image: url(../imagens/review1.png);
+}
+
+#review2 {
+    width: 250px;
+    height: 100px;
+    background-image: url(../imagens/review2.png);
+}
+
+#review3 {
+    width: 250px;
+    height: 120px;
+    background-image: url(../imagens/review3.png);
+}
+
 #review {
     background-color: #333741;
     color: white;
     text-decoration: none;
     border: 2px solid black;
+    border-radius: 3px;
     padding: 5px;
     font-weight: bold;
 }
@@ -154,7 +233,7 @@ p {
 
 #footer {
     width: 100%;
-    height: 450px;
+    height: 530px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,12 +242,17 @@ p {
 
 #footer h4 {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 25px;
+    padding-top: 15px;
 }
 
 #footer p {
     text-align: center;
     font-size: 0.9em;
+    color: white;
+}
+
+#footer a {
     color: white;
 }
 
@@ -199,8 +283,69 @@ p {
 
 #backgroundPictureGallery {
     height: 550px;
-    background-image: url(../imagens/carousel4.jpg);
+    background-image: url(../imagens/backgroundgallery.jpeg);
 }
+
+#mainGallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.border {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.imgGallery {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    transition: 1s;
+}
+
+.imgGallery:hover {
+    transform: scale(1.1);
+}
+
+#haircut1 {
+    background-image: url(../imagens/haircut1.jpg);
+}
+
+#haircut2 {
+    background-image: url(../imagens/haircut2.jpg);
+}
+
+#haircut3 {
+    background-image: url(../imagens/haircut3.jpg);
+}
+
+#beard1 {
+    background-image: url(../imagens/beard1.jpg);
+}
+
+#beard2 {
+    background-image: url(../imagens/beard2.jpg);
+}
+
+#beard3 {
+    background-image: url(../imagens/beard3.jpg);
+}
+
+#beard4 {
+    background-image: url(../imagens/beard4.jpg);
+}
+
+#beard5 {
+    background-image: url(../imagens/beard5.jpg);
+}
+
+
 
 /*
     Crew
