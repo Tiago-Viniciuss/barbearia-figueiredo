@@ -84,6 +84,7 @@ body {
     font-weight: bold;
 }
 
+
 .backgroundImages {
     background-size: cover;
     background-repeat: no-repeat;
@@ -94,9 +95,20 @@ body {
 #backgroundPicture {
     height: 550px;
     background-image: url(../imagens/background1.png);
-    background-position: center; 
+    background-position: center;
 }
 
+#makeAppointment {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#makeAppointment a {
+    text-decoration: none;
+    color: white;
+}
 
 [data-anime] {
     opacity: 0;
@@ -118,10 +130,13 @@ body {
 
 
 p {
-    width: 300px;
+    width: 320px;
     margin: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
     text-align: justify;
 }
+
 
 #background2 {
     margin: 15px;
@@ -217,7 +232,7 @@ p {
 
 #footer {
     width: 100%;
-    height: 450px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
